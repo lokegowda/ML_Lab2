@@ -1,0 +1,13 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+data = pd.read_csv("toyotacorola.csv")
+
+
+plt.title('Box Plot')
+plt.boxplot([data["Price"],data["HP"],data["KM"]])
+
+plt.xticks([1,2,3],["Price","HP","KM"])
+
+plt.show()
