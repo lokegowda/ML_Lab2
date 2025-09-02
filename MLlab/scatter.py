@@ -1,10 +1,11 @@
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns 
-
-df=pd.read_csv('toyotacorola.csv')
-
-sns.pairplot(df)
-plt.suptitle('pair wise scatter plot of dataset',y=10)
-plt.show
+def scatter_plot():
+    x = np.random.randn(100)
+    y = np.random.randn(100)
+    plt.scatter(x, y)
+    plt.title("Scatter Plot")
+    plt.xlabel("X-axis")
+    plt.ylabel("Y-axis")
+    plt.show()
+scatter_plot()
