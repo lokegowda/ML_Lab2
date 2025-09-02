@@ -1,10 +1,9 @@
-
-import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import seaborn as sns
-data = pd.read_csv("toyotacorola.csv")
-
-
-sns.heatmap(data[["Price","KM","Doors", "Weight"]].corr(),cmap='jet',annot=True)
-plt.show()
+import matplotlib.pyplot as plt
+def heat_map():
+    data = np.random.rand(10, 10)
+    sns.heatmap(data, cmap='viridis')
+    plt.title("Heatmap")
+    plt.show()
+heat_map()
